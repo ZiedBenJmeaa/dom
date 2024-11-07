@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1549&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px -200px;
+}
+
+h1 {
+    font-family: Saira Condensed;
+    font-size: 70px;
+    text-align: center;
+  
+    background: -webkit-linear-gradient(90deg, #b2dfdb, #000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1100px;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cont {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.delete, .like {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.delete:hover {
+    color: #e74c3c;
+}
+
+.like:hover {
+    color: #e74c3c;
+}
+
+#tt {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+    
+    .btn-cont button, .btn-cont p {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    
+    img {
+        max-width: 80px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-cont {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 70px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
